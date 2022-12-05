@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>guillotine</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Гильотина</h1>
+    
+<form action="/in" target="_blank"> 
+    <p><input id="input1" maxlength="3" name="" type="number"  ></p>
+    <p><button  id="Button1">Сохранить</button> </p>
+    
+   <script>   
+
+    document.getElementById("Button1").addEventListener("click", function(event){
+event.preventDefault();
+let in1 = document.getElementById("input1").value;
+let jsonData = 'input1=' + in1;
+
+
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        Console.log("Success");
+    }
+};
+xhttp.open("GET", 'in?'+jsonData, true);
+xhttp.timeout = 10000;
+xhttp.send();       
+});</script>
+  </form> 
+  
+  
+  <form action="/in1" target="_blank"> 
+    
+    <p><input id="input2" maxlength="3" name="" type="number"  ></p>
+    
+    <p><button  id="Button2">Сохранить</button> </p>
+    
+   <script>   
+   
+    document.getElementById("Button2").addEventListener("click", function(event){
+event.preventDefault();
+let in2 = document.getElementById("input2").value;
+let jsonData = 'input2=' + in2;
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        Console.log("Success");
+    }
+};
+xhttp.open("GET", 'in1?'+jsonData, true);
+
+xhttp.timeout = 10000;
+xhttp.send();       
+});</script>
+  </form>
+
+<form action="/in2" target="_blank"> 
+    
+  <p><input id="input3" maxlength="3" name="" type="number"  ></p>
+  
+  <p><button  id="Button3">Сохранить</button> </p>
+  
+ <script>   
+ 
+  document.getElementById("Button3").addEventListener("click", function(event){
+event.preventDefault();
+let in3 = document.getElementById("input3").value;
+let jsonData = 'input3=' + in3;
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+      Console.log("Success");
+  }
+};
+xhttp.open("GET", 'in2?'+jsonData, true);
+
+xhttp.timeout = 10000;
+xhttp.send();       
+});</script>
+  </form>  
+
+
+  <form action="/in3" target="_blank"> 
+    
+    <p><input id="input4" maxlength="3" name="" type="number"  ></p>
+    
+    <p><button  id="Button4">Сохранить</button> </p>
+    
+   <script>   
+   
+    document.getElementById("Button4").addEventListener("click", function(event){
+event.preventDefault();
+let in4 = document.getElementById("input4").value;
+let jsonData = 'input4=' + in4;
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        Console.log("Success");
+    }
+};
+xhttp.open("GET", 'in3?'+jsonData, true);
+
+xhttp.timeout = 10000;
+xhttp.send();       
+});</script>
+  </form>
+
+<form action="/in4" target="_blank"> 
+    
+  <p><input id="input5" maxlength="3" name="" type="number"  ></p>
+  
+  <p><button  id="Button5">Сохранить</button> </p>
+  
+ <script>   
+ 
+  document.getElementById("Button5").addEventListener("click", function(event){
+event.preventDefault();
+let in2 = document.getElementById("input5").value;
+let jsonData = 'input5=' + in2;
+let xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+      Console.log("Success");
+  }
+};
+xhttp.open("GET", 'in4?'+jsonData, true);
+
+xhttp.timeout = 10000;
+xhttp.send();       
+});</script>
+  </form>  
+  <form actiot="/">
+    <input type="button" onclick="history.back(-2); return false;" value="Назад"/></form>
+  
+    <form action="/index" target="_blank" method="get">
+      <p><button>Chart</button></p>
+      </form>
+
+
+
+</body>
+</html>
+  
